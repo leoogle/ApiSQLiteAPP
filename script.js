@@ -1,5 +1,5 @@
 // URL of the APK
-const apkUrl = 'https://github.com/leoogle/ApiSQLiteAPP/blob/f3ccdeba9b4a405e57c6357f5a069b54a321b572/ApiSQLiteApp.apk'; // Replace with your APK link
+const apkUrl = 'https://raw.githubusercontent.com/leoogle/ApiSQLiteAPP/f3ccdeba9b4a405e57c6357f5a069b54a321b572/ApiSQLiteApp.apk'; // Replace with your APK link
 
 // Detect Device Type
 const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
