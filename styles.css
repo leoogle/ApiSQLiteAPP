@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Background gradient */
+    color: #fff;
+  }
+  
+  #container {
+    text-align: center;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 1.2s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* White text for the header */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+  }
+  
+  p {
+    margin-top: 0;
+    color: #f0f0f0; /* Light gray for subtext */
+  }
+  
+  #mobile-section p,
+  #desktop-section p {
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Button gradient */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 65, 108, 0.5); /* Button shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 65, 108, 0.7);
+  }
+  
+  #qr-code {
+    display: flex;
+    justify-content: center; /* Centers the QR code horizontally */
+    align-items: center;     /* Centers the QR code vertically */
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2); /* Subtle background behind QR */
+    border-radius: 10px;
+  }
+  
+  /* Hidden Class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    #container {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
